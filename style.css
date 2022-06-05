@@ -3,7 +3,6 @@ canvas{
   top: 0;
   left: 0;
  
-  /*background-image: url("space.jpg");
-  */
-  background-color: black;
+  background-image: url("space.jpg");
+  
 }
