@@ -56,9 +56,9 @@ scene.background = spaceTexture;
 function animate() {
   requestAnimationFrame( animate );
 
-  torus.rotation.x += 1;
-  torus.rotation.z += 1;
-  torus.rotation.y += 0.5;
+  torus.rotation.x += 0.001;
+  torus.rotation.z += 0.001;
+  torus.rotation.y += 0.0005;
 
   controls.update();
 
