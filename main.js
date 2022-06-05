@@ -48,7 +48,7 @@ function addStar(){
   scene.add(star)
 }
 
-Array(2000).fill().forEach(addStar)
+Array(1500).fill().forEach(addStar)
 
 const spaceTexture = new THREE.TextureLoader().load('space.jpg');
 scene.background = spaceTexture;
@@ -56,9 +56,9 @@ scene.background = spaceTexture;
 function animate() {
   requestAnimationFrame( animate );
 
-  torus.rotation.x += 0.01;
-  torus.rotation.z += 0.001;
-  torus.rotation.y += 0.005;
+  torus.rotation.x += 1;
+  torus.rotation.z += 1;
+  torus.rotation.y += 0.5;
 
   controls.update();
 
