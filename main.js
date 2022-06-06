@@ -31,7 +31,7 @@ const torus = new THREE.Mesh(geometry,material);
 //scene.add(torus)
 
 const pointLight = new THREE.PointLight(0xffffff)
-pointLight.position.set(1000,0,0)
+pointLight.position.set(100,0,-200)
 
 const ambientLight = new THREE.AmbientLight(0xffffff);
 scene.add(pointLight,ambientLight)
@@ -119,6 +119,7 @@ function animate() {
 
   earth.rotation.y +=0.0008
   moon.rotation.y +=0.001
+  sun.rotation.y += 0.00003
    controls.update();
 
   renderer.render(scene, camera);
