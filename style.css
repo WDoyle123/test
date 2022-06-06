@@ -3,10 +3,12 @@ canvas{
   top: 0;
   left: 0;
   background-image: url("space2.jpg");
+  
+
 }
 
 :root {
-  --dark-bg: rgba(15, 15, 15, 0.95);
+  --dark-bg: rgba(15, 15, 15, 0.0);
   --spacing: 350px;
 
 
@@ -25,6 +27,7 @@ main {
   padding: 120px 0px;
   display: grid;
   grid-template-columns: repeat(12,1fr);
+  image-rendering: auto;
 
 }
 
